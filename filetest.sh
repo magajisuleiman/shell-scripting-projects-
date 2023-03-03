@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#\c keeps cursor on the same line as the echo, -c validate \c
-echo -c "Enter name of the file : \c"
+#\c keeps cursor on the same line as the echo, -e validate \c
+echo -e "Enter name of the file : \c"
 read file_name 
 
 if [ -e $file_name ]
@@ -11,6 +11,5 @@ else
 	echo "$file_name not found"
 fi
 
-#flags to use -e if exist or not, -f reugular file or not, -d for directory  
-
+#flags to use -e if exist or not, -f reugular file or not, -d for directory, -w to check if the file has the write permision 
 
